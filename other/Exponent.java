@@ -1,5 +1,5 @@
 /**
- * Exponent
+ * Recursive Exponent Algorithm
  */
 public class Exponent {
 
