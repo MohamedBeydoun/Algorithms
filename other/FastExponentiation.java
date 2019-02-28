@@ -1,5 +1,5 @@
 /**
- * FastExponentiation
+ *Recursive algorithm for FastExponentiation
  */
 public class FastExponentiation {
 
