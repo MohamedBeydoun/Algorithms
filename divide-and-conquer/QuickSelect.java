@@ -1,0 +1,6 @@
+/**
+ * QuickSelect
+ */
+public class QuickSelect {
+
+}
