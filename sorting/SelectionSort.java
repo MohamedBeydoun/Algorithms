@@ -20,14 +20,4 @@ public class SelectionSort {
 
         }
     }
-
-    public static void main(String[] args) {
-        int[] arr = { 5, 4, 3, 2, 1 };
-
-        sort(arr);
-
-        for (int num : arr) {
-            System.out.print(num);
-        }
-    }
 }
