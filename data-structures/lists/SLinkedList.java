@@ -26,6 +26,11 @@ public class SLinkedList {
         this.size = 0;
     }
 
+    // get the size of the list
+    public int getSize() {
+        return this.size;
+    }
+
     // getNode method returns the node at a certain index
     public Node<E> getNode(int i) {
         if (i < 0 || i >= size) {
@@ -72,4 +77,19 @@ public class SLinkedList {
         this.size = 0;
     }
 
+    // adding a node to the beginning of the list
+    public void addFirst(E newElement) {
+        // make new node and increase the size of the list
+        Node<E> newNode = new Node<E>(newElement);
+        this.size++;
+
+        // if list is empty
+        if (this.size == 0) {
+            head = newNode;
+            tail = newNode; // since its a one node list
+        } else {
+            newNode.next = head;
+            head = newNode;
+        }
+    }
 }
