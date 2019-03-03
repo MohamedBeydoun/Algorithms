@@ -92,4 +92,20 @@ public class SLinkedList {
             head = newNode;
         }
     }
+
+    // adding element to ith position
+    public void add(int i, E newElement) {
+        if (i == 0) {
+            addFirst(newElement);
+        } else if (i < 0 || i >= size) {
+            throw new IllegalArgumentException();
+        } else {
+            Node<E> newNode = new Node<E>(newElement);
+            Node<E> oldNode = getNode(i - 1);
+
+            newNode.next = oldNode.next;
+            oldNode.next = newNode;
+            size++;
+        }
+    }
 }
