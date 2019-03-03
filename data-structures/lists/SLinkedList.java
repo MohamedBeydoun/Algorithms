@@ -65,7 +65,7 @@ public class SLinkedList {
 
     }
 
-    // method that checks if list is empty
+    // check if list is empty
     public boolean isEmpty() {
         return (size == 0);
     }
