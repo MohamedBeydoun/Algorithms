@@ -95,10 +95,11 @@ public class SLinkedList {
 
     // adding element to ith position
     public void add(int i, E newElement) {
-        if (i == 0) {
-            addFirst(newElement);
-        } else if (i < 0 || i >= size) {
+
+        if (i < 0 || i >= size) {
             throw new IllegalArgumentException();
+        } else if (i == 0) {
+            addFirst(newElement);
         } else {
             Node<E> newNode = new Node<E>(newElement);
             Node<E> oldNode = getNode(i - 1);
@@ -107,5 +108,10 @@ public class SLinkedList {
             oldNode.next = newNode;
             size++;
         }
+    }
+
+    // removing element from the ith position
+    public E remove(int i) {
+
     }
 }
