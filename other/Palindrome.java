@@ -11,4 +11,23 @@ public class Palindrome {
         }
         return true;
     }
+
+    public static boolean isPalindromeRec(String s) {
+
+        // Base case 1
+        if (s.length() == 0) {
+            return true;
+        }
+        // Base case 2
+        else if (s.length() == 1) {
+            return true;
+        }
+        else {
+            if (s.charAt(0) == s.charAt(s.length() - 1)){
+                return isPalindromeRec(s.substring(1, s.length() - 1));
+            }
+
+            return false;
+        }
+    }
 }
